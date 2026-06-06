@@ -682,6 +682,30 @@
     text-decoration: none;
   }
 
+  /* HEADSHOT */
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-photo {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid rgba(200,245,90,0.25);
+    box-shadow: 0 0 0 6px rgba(200,245,90,0.06);
+  }
+
+  @media (max-width: 768px) {
+    .hero-inner { flex-direction: column-reverse; gap: 2rem; }
+    .hero-photo { width: 140px; height: 140px; }
+  }
+
   /* SCROLL REVEAL */
   .reveal {
     opacity: 0;
@@ -731,6 +755,7 @@
 <section class="hero" style="max-width:100%; padding-left:min(3rem,8vw); padding-right:min(3rem,8vw);">
   <div class="hero-bg-grid"></div>
   <div class="hero-glow"></div>
+  <div class="hero-inner">
   <div class="hero-content">
     <div class="hero-eyebrow">Available for hire</div>
     <h1>
@@ -763,6 +788,8 @@
         <span class="stat-label">Best paper award</span>
       </div>
     </div>
+  </div>
+  <img src="headshot.jpg" alt="Atharva Chaskar" class="hero-photo">
   </div>
 </section>
 
@@ -962,7 +989,7 @@
   <p class="contact-desc reveal">Looking for data analyst and data engineering roles. Based in Springfield, IL — open to remote and hybrid.</p>
   <div class="contact-links reveal">
     <a href="mailto:atharvachaskar01@gmail.com" class="btn-primary">Email Me ↗</a>
-    <a href="https://www.linkedin.com/in/atharvachaskar" target="_blank" rel="noopener" class="btn-secondary">LinkedIn ↗</a>
+    <a href="https://www.linkedin.com/in/atharva-chaskar-0808ac" target="_blank" rel="noopener" class="btn-secondary">LinkedIn ↗</a>
     <a href="https://github.com/AthuAC" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
   </div>
 </section>
