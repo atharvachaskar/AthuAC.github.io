@@ -686,24 +686,40 @@
   .hero-inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 4rem;
     flex-wrap: wrap;
   }
 
-  .hero-photo {
+  .hero-photo-wrap {
     flex-shrink: 0;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center top;
-    border: 2px solid rgba(200,245,90,0.25);
-    box-shadow: 0 0 0 6px rgba(200,245,90,0.06);
+    position: relative;
   }
 
-  @media (max-width: 768px) {
-    .hero-inner { flex-direction: column-reverse; gap: 2rem; }
-    .hero-photo { width: 140px; height: 140px; }
+  .hero-photo-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 1.25rem;
+    background: linear-gradient(135deg, rgba(200,245,90,0.3), rgba(78,205,196,0.15), transparent);
+    z-index: 0;
+  }
+
+  .hero-photo {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 260px;
+    height: 320px;
+    border-radius: 1.1rem;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(15%);
+  }
+
+  @media (max-width: 900px) {
+    .hero-inner { flex-direction: column; gap: 2rem; }
+    .hero-photo { width: 160px; height: 200px; }
   }
 
   /* SCROLL REVEAL */
@@ -757,13 +773,13 @@
   <div class="hero-glow"></div>
   <div class="hero-inner">
   <div class="hero-content">
-    <div class="hero-eyebrow">Available for hire</div>
+    <div class="hero-eyebrow">Open to data analyst roles</div>
     <h1>
       Atharva<br>
       <span class="line2">Chaskar</span>
     </h1>
     <p class="hero-desc">
-      Data Analyst & Engineer with hands-on experience building <strong>production ETL pipelines</strong>, deploying <strong>live dashboards</strong>, and conducting <strong>award-winning research</strong> in spatial analytics.
+      I turn raw, messy public data into decisions — from a 25-year transit ridership analysis that exposed Chicago's post-COVID recovery, to <strong>award-winning research</strong> that mapped mobility gaps across 3,322 census block groups.
     </p>
     <div class="hero-ctas">
       <a href="#projects" class="btn-primary">View Projects ↓</a>
@@ -789,7 +805,9 @@
       </div>
     </div>
   </div>
-  <img src="headshot.jpg" alt="Atharva Chaskar" class="hero-photo">
+  <div class="hero-photo-wrap">
+    <img src="headshot.jpg" alt="Atharva Chaskar" class="hero-photo">
+  </div>
   </div>
 </section>
 
@@ -820,7 +838,7 @@
       <div>
         <span class="project-tag">Data Engineering</span>
         <h3 class="project-title">CTA Performance Analytics Platform</h3>
-        <p class="project-desc">End-to-end pipeline ingesting 25 years of Chicago Transit Authority ridership data from a public REST API, loaded into SQLite, and surfaced through an interactive live dashboard.</p>
+        <p class="project-desc">End-to-end pipeline ingesting 25 years of Chicago Transit Authority ridership data from a public REST API, loaded into Snowflake, and surfaced through an interactive live dashboard.</p>
         <ul class="project-bullets">
           <li>Ingested 9,190 records (Jan 2001–Feb 2026) from Chicago Data Portal REST API via Python ETL</li>
           <li>Uncovered 57% COVID-driven ridership drop, peak year (2012), and busiest single day (2.05M rides)</li>
@@ -829,8 +847,7 @@
         <div class="project-tech">
           <span class="tech-pill">Python</span>
           <span class="tech-pill">Pandas</span>
-          <span class="tech-pill">SQLite</span>
-          <span class="tech-pill">SQLAlchemy</span>
+          <span class="tech-pill">Snowflake</span>
           <span class="tech-pill">Plotly Dash</span>
           <span class="tech-pill">REST API</span>
           <span class="tech-pill">Render</span>
