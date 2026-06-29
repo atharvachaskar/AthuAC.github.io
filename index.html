@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atharva Chaskar</title>
+<title>Atharva Chaskar — Data Analyst & Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -692,6 +692,7 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 1100px;
+    margin: 0 auto;
   }
 
   .hero-photo-wrap {
@@ -784,28 +785,28 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero" style="max-width:100%; padding-left:min(3rem,8vw); padding-right:min(3rem,8vw);">
+<section class="hero" style="max-width:100%; padding-left:min(3rem,8vw); padding-right:min(3rem,8vw); display:flex; flex-direction:column; align-items:center;">
   <div class="hero-bg-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-inner">
   <div class="hero-content">
-    <div class="hero-eyebrow">Open to analyst roles</div>
+    <div class="hero-eyebrow">Open to analytics engineer &amp; analyst roles</div>
     <h1>
       Atharva<br>
       <span class="line2">Chaskar</span>
     </h1>
     <p class="hero-desc">
-      I turn raw, messy public data into decisions. From a 25-year transit ridership analysis that exposed Chicago's post-COVID recovery, to <strong>award-winning research</strong> that mapped mobility gaps across 3,322 census block groups.
+      I turn raw, messy public data into decisions — from a 25-year transit ridership analysis that exposed Chicago's post-COVID recovery, to <strong>award-winning research</strong> that mapped mobility gaps across 3,322 census block groups.
     </p>
     <div class="hero-ctas">
       <a href="#projects" class="btn-primary">View Projects ↓</a>
       <a href="mailto:atharvachaskar01@gmail.com" class="btn-secondary">Get in Touch</a>
-      <a href="https://github.com/AthuAC" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
+      <a href="https://github.com/atharvachaskar" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-num">2+<span> yrs</span></span>
-        <span class="stat-label">Working with data</span>
+        <span class="stat-num">2<span> yrs</span></span>
+        <span class="stat-label">Professional experience</span>
       </div>
       <div class="stat">
         <span class="stat-num">57<span>%</span></span>
@@ -842,10 +843,10 @@
       <span class="exp-period">Apr 2023 – Jul 2024</span>
     </div>
     <ul class="project-bullets">
-      <li>Maintained and extended data quality validation rules across Azure Data Factory ELT pipelines processing data from 5+ heterogeneous sources, contributing to improved pipeline reliability and reduced downstream support incidents</li>
-      <li>Debugged and modified existing SQL transformation scripts to ensure consistent delivery of analytics-ready datasets powering enterprise reporting dashboards</li>
-      <li>Built new ADF pipeline components and validation checks to address recurring data quality issues identified during sprint cycles</li>
-      <li>Supported bi-weekly production releases by promoting code across environments using CI/CD and Git-based workflows, ensuring stable deployment of pipeline enhancements</li>
+      <li>Strengthened data quality across Azure Data Factory ELT pipelines by extending validation rules and data profiling checks, performing root cause analysis to resolve discrepancies across 5+ heterogeneous sources and improve pipeline reliability</li>
+      <li>Optimized SQL transformation scripts to ensure consistent delivery of KPI-ready, analytics-ready datasets supporting routine, ad hoc, and executive reporting dashboards used for trend analysis and decision-making</li>
+      <li>Developed new ADF pipeline components, validation checks, and reproducible automated reporting workflows based on requirements gathered during sprint cycles to address recurring data quality issues</li>
+      <li>Coordinated bi-weekly production releases through code review, CI/CD workflows, UAT support, and Git-based version control, maintaining technical documentation, SOPs, and reporting logic definitions to ensure consistent, stable pipeline delivery</li>
     </ul>
   </div>
 
@@ -855,7 +856,7 @@
       <div class="edu-card reveal">
         <p class="edu-degree">M.S. Management Information Systems</p>
         <p class="edu-school">University of Illinois Springfield</p>
-        <p class="edu-meta">GPA 3.90 / 4.00 · May 2026 · Beta Gamma Sigma</p>
+        <p class="edu-meta">GPA 3.9 / 4.0 · May 2026 · Beta Gamma Sigma</p>
       </div>
       <div class="edu-card reveal">
         <p class="edu-degree">B.E. Mechanical Engineering</p>
@@ -888,48 +889,72 @@
 
   <div class="projects-grid">
 
-    <!-- CTA — Featured -->
-    <div class="project-card featured reveal">
-      <div>
-        <span class="project-tag">Data Engineering</span>
-        <h3 class="project-title">CTA Performance Analytics Platform</h3>
-        <p class="project-desc">End-to-end pipeline ingesting 25 years of Chicago Transit Authority ridership data from a public REST API, loaded into Snowflake, and surfaced through an interactive live dashboard.</p>
-        <ul class="project-bullets">
-          <li>Ingested 9,190 records (Jan 2001–Feb 2026) from Chicago Data Portal REST API via Python ETL</li>
-          <li>Uncovered 57% COVID-driven ridership drop, peak year (2012), and busiest single day (2.05M rides)</li>
-          <li>Built interactive Plotly Dash dashboard with 4 visualizations — deployed and live</li>
-        </ul>
-        <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Pandas</span>
-          <span class="tech-pill">Snowflake</span>
-          <span class="tech-pill">Plotly Dash</span>
-          <span class="tech-pill">REST API</span>
-          <span class="tech-pill">Render</span>
-        </div>
-        <div class="project-links">
-          <a href="https://cta-analytics.onrender.com" target="_blank" rel="noopener" class="project-link">Live Dashboard ↗</a>
-          <a href="https://github.com/AthuAC/cta-analytics" target="_blank" rel="noopener" class="project-link ghost">GitHub ↗</a>
-        </div>
+    <!-- CTA -->
+    <div class="project-card reveal">
+      <span class="project-tag">Data Engineering</span>
+      <h3 class="project-title">CTA Performance Analytics Platform</h3>
+      <p class="project-desc">End-to-end pipeline ingesting 25 years of Chicago Transit Authority ridership data from a public REST API, loaded into Snowflake, and surfaced through an interactive live dashboard.</p>
+      <ul class="project-bullets">
+        <li>Developed a Python ETL pipeline to ingest CTA Daily Boardings data (9,190 records) from the Chicago Data Portal REST API, initially storing in SQLite before migrating to Snowflake cloud data warehouse for scalable storage and live dashboard consumption</li>
+        <li>Analyzed 25 years of CTA ridership (11.1B total rides) using Pandas and SQL to conduct descriptive and trend analysis, investigating anomalies to surface a 57% COVID-driven ridership drop, peak year (2012), busiest single day (2.05M rides), and Bus vs. Rail patterns</li>
+        <li>Built an interactive Plotly Dash dashboard with 4 visualizations highlighting ridership distribution across bus vs. rail, year-over-year growth trends, and the system's post-2020 recovery trajectory</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Pandas</span>
+        <span class="tech-pill">Snowflake</span>
+        <span class="tech-pill">Plotly Dash</span>
+        <span class="tech-pill">REST API</span>
+        <span class="tech-pill">Render</span>
       </div>
-      <div>
-        <span class="project-tag teal">Spatial Analytics</span>
-        <h3 class="project-title">Transit–Walkability Gap Research</h3>
-        <p class="project-desc">Applied unsupervised machine learning to 3,322 census block groups to identify mobility misalignment patterns across the Chicago metro area.</p>
-        <ul class="project-bullets">
-          <li>K-means clustering (scikit-learn) identifying a Transit–Walkability Gap affecting 53% of the Chicago–Naperville–Elgin CBSA</li>
-          <li>Rejected fourth variable (D5AR) based on multicollinearity analysis (r = 0.79) and cluster instability</li>
-          <li>End-to-end pipeline: data cleaning → feature selection → z-score standardization → clustering → ANOVA validation</li>
-          <li>Publication-quality spatial maps via GeoPandas and Matplotlib</li>
-        </ul>
-        <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">scikit-learn</span>
-          <span class="tech-pill">GeoPandas</span>
-          <span class="tech-pill">Matplotlib</span>
-          <span class="tech-pill">K-means</span>
-          <span class="tech-pill">ANOVA</span>
-        </div>
+      <div class="project-links">
+        <a href="https://cta-analytics.onrender.com" target="_blank" rel="noopener" class="project-link">Live Dashboard ↗</a>
+        <a href="https://github.com/atharvachaskar/cta-analytics" target="_blank" rel="noopener" class="project-link ghost">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- Transit-Walkability -->
+    <div class="project-card reveal">
+      <span class="project-tag teal">Spatial Analytics</span>
+      <h3 class="project-title">Transit–Walkability Gap Research</h3>
+      <p class="project-desc">Applied unsupervised machine learning to 3,322 census block groups to identify mobility misalignment patterns across the Chicago metro area.</p>
+      <ul class="project-bullets">
+        <li>Conducted segmentation analysis using K-means clustering in Python (scikit-learn) on 3,322 census block groups from the EPA Smart Location Database, identifying a Transit–Walkability Gap affecting 53% of the Chicago metropolitan area</li>
+        <li>Built an end-to-end data pipeline covering data cleaning, feature selection, z-score standardization, clustering, and one-way ANOVA validation; independently rejected a fourth variable (D5AR) based on multicollinearity analysis (r = 0.79) and cluster instability</li>
+        <li>Generated publication-quality spatial maps using GeoPandas and Matplotlib, visualizing cluster distributions across the Chicago–Naperville–Elgin CBSA</li>
+        <li>Co-authored peer-reviewed paper accepted to MWAIS 2026 Proceedings; received Best Research-in-Progress Paper Award competing among faculty, doctoral, and graduate submissions. Presented findings in Athens, Ohio</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">scikit-learn</span>
+        <span class="tech-pill">GeoPandas</span>
+        <span class="tech-pill">Matplotlib</span>
+        <span class="tech-pill">K-means</span>
+        <span class="tech-pill">ANOVA</span>
+      </div>
+    </div>
+
+
+    <!-- Olist -->
+    <div class="project-card reveal">
+      <span class="project-tag">Analytics Engineering</span>
+      <h3 class="project-title">Olist E-Commerce Analytics Pipeline</h3>
+      <p class="project-desc">End-to-end analytics pipeline ingesting 9 Brazilian e-commerce CSVs (~1.5M rows) into Snowflake, transformed with dbt Core, and surfaced through 3 Looker Studio dashboards.</p>
+      <ul class="project-bullets">
+        <li>Engineered RAW → STAGING → MARTS Snowflake architecture via Python (<code>snowflake-connector-python</code>, <code>write_pandas</code>) with PAT token authentication for MFA-enforced programmatic access</li>
+        <li>Built 11 dbt Core models — 8 staging views with type casting and standardization, 3 mart tables covering seller segmentation, delivery performance, and product category economics</li>
+        <li>Wrote 15 dbt data quality tests across all primary keys and implemented a custom <code>generate_schema_name</code> macro enforcing clean schema separation</li>
+        <li>Delivered 3 Looker Studio dashboards surfacing 91.9% on-time delivery rate, São Paulo generating 65% of platform revenue, and health &amp; beauty leading at $1.23M revenue</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">Snowflake</span>
+        <span class="tech-pill">dbt Core</span>
+        <span class="tech-pill">Looker Studio</span>
+        <span class="tech-pill">SQL</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/atharvachaskar/olist-ecommerce-analytics" target="_blank" rel="noopener" class="project-link ghost">GitHub ↗</a>
       </div>
     </div>
 
@@ -939,9 +964,9 @@
       <h3 class="project-title">Chicago Crime Data Engineering & Mining Pipeline</h3>
       <p class="project-desc">Large-scale preprocessing and analysis of 750K+ Chicago crime records with Tableau dashboards and machine learning models for pattern detection.</p>
       <ul class="project-bullets">
-        <li>Preprocessed 750K+ records — missing values, type conversions, structural inconsistencies</li>
-        <li>3 Tableau dashboards: executive overview, time/arrest insights, geographic hotspot analysis across 262K+ incidents</li>
-        <li>Hierarchical clustering in SAS Enterprise Miner with 90% sub-sample stability; Decision Tree at 88% accuracy</li>
+        <li>Transformed 750K+ raw Chicago crime records into analytics-ready datasets using Python and Pandas, resolving missing values, type conversions, and structural inconsistencies across a large-scale public safety dataset</li>
+        <li>Designed 3 Tableau dashboards (executive overview, time/arrest insights, geographic hotspot analysis) visualizing patterns across 262K+ incidents for operational decision-support</li>
+        <li>Developed predictive analytical models including hierarchical clustering and Decision Tree classification achieving 88% accuracy for arrest outcome prediction, validated with 90% sub-sample stability testing</li>
       </ul>
       <div class="project-tech">
         <span class="tech-pill">Python</span>
@@ -951,7 +976,7 @@
         <span class="tech-pill">Hierarchical Clustering</span>
       </div>
       <div class="project-links">
-        <a href="https://github.com/AthuAC/chicago-crime-analytics-dashboard" target="_blank" rel="noopener" class="project-link ghost">GitHub ↗</a>
+        <a href="https://github.com/atharvachaskar/chicago-crime-analytics-dashboard" target="_blank" rel="noopener" class="project-link ghost">GitHub ↗</a>
       </div>
     </div>
 
@@ -971,6 +996,7 @@
         <span class="skill-chip">SQL</span>
         <span class="skill-chip">Tableau</span>
         <span class="skill-chip">Power BI</span>
+        <span class="skill-chip">Looker Studio</span>
         <span class="skill-chip">EDA</span>
         <span class="skill-chip">K-means Clustering</span>
         <span class="skill-chip">Statistical Modeling</span>
@@ -990,11 +1016,12 @@
     <div class="skill-group reveal">
       <p class="skill-group-title">Data Engineering</p>
       <div class="skill-list">
+        <span class="skill-chip">Snowflake</span>
+        <span class="skill-chip">dbt Core</span>
         <span class="skill-chip">Azure Data Factory</span>
         <span class="skill-chip">ETL / ELT</span>
-        <span class="skill-chip">SQLAlchemy</span>
         <span class="skill-chip">REST APIs</span>
-        <span class="skill-chip">SQLite</span>
+        <span class="skill-chip">SQLAlchemy</span>
       </div>
     </div>
     <div class="skill-group reveal">
@@ -1016,11 +1043,11 @@
 <section id="contact" class="contact-section">
   <p class="section-label">Say hello</p>
   <h2 class="section-title reveal">Open to opportunities</h2>
-  <p class="contact-desc reveal">Looking for data analyst and data engineering roles. Based in Springfield, IL — open to remote and hybrid.</p>
+  <p class="contact-desc reveal">Open to analytics engineer and data analyst roles. Based in Springfield, IL — open to remote and hybrid.</p>
   <div class="contact-links reveal">
     <a href="mailto:atharvachaskar01@gmail.com" class="btn-primary">Email Me ↗</a>
     <a href="https://www.linkedin.com/in/atharva-chaskar-0808ac" target="_blank" rel="noopener" class="btn-secondary">LinkedIn ↗</a>
-    <a href="https://github.com/AthuAC" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
+    <a href="https://github.com/atharvachaskar" target="_blank" rel="noopener" class="btn-secondary">GitHub ↗</a>
   </div>
 </section>
 
